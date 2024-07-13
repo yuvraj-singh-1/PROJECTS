@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --white: #ffffff;
+  --purple: #d663f6;
+  --background: rgb(246, 200, 200);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--background);
+}
+.logo-holder {
+  display: flex;
+  position: relative;
+  height: max-content;
+  width: 80vw;
+  margin: 0px auto;
+  box-sizing: inherit;
+}
+.titles {
+  display: flex;
+  position: relative;
+  list-style: none;
+  align-items: center;
+}
+.task,
+.list,
+.schedule {
+  margin: 0px 5px;
+  font-family: "Nunito";
+  font-size: 20px;
+  font-weight: 600;
+}
+.task {
+  color: #af00b3;
+}
+.list {
+  color: #7344d8;
+}
+.schedule {
+  color: #ff008a;
+}
+.writing-space {
+  margin: 20px;
+  display: flex;
+  place-content: center;
+  position: relative;
+}
+textarea {
+  width: 30vw;
+  height: 10vh;
+  padding: 12px 20px;
+  box-sizing: inherit;
+  border: 2px solid #f9b4b4;
+  border-radius: 20px;
+  background-color: rgb(178, 181, 243);
+  font-size: 16px;
+  resize: none;
+}
+.add {
+  background-color: var(--purple);
+  width: max-content;
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: "Nunito";
+  color: white;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+.add:hover {
+  background-color: white;
+  color: var(--purple);
+  transform: translateY(-3px);
+}
+.add:active {
+  transform: translateZ(5px);
+}
+.task-area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 60vw;
+  height: max-content;
+  margin: 0px auto;
+  height: max-content;
+  color: #ff008a;
+  background-color: #e9e9e9;
+  border: 2px solid #ff008a;
+  padding: 10px;
+  font-family: "Nunito";
+  font-size: 20px;
+}
+#taskbox li {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  padding: 10px;
+}
+#taskbox li::before {
+  content: " ";
+  background-image: url(checkbox.png);
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+  background-position: center;
+  display: inline-block;
+}
+#taskbox .checked {
+  text-decoration: line-through;
+}
+#taskbox .checked::before {
+  background-image: url(checked.png);
+  height: 28px;
+  background-size: cover;
+  background-position: center;
+  width: 28px;
+  box-sizing: border-box;
+}
+.hide {
+  display: none;
+}
+#taskbox li span {
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  color: #ffffff;
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  background-color: #ff008a;
+  transition: 0.3s ease;
+}
+#taskbox li span:hover {
+  background-color: white;
+  color: #ff008a;
+  transform: translateY(3px);
+}
+#taskbox li span:active {
+  transform: translateZ(3px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.hidebox{
+    display: none;
+}

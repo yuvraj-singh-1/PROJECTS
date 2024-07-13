@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="x-icon" href="2.png" />
+    <title>TO-DO-LIST</title>
+  </head>
+  <body>
+    <nav class="logo-holder">
+      <img src="1.png" height="60px" width="60px" alt="Logo" class="logo" />
+      <ul class="titles">
+        <li class="task">TASK &middot;</li>
+        <li class="list">LIST &middot;</li>
+        <li class="schedule">SCHEDULE &middot;</li>
+      </ul>
+    </nav>
+    <div class="writing-space">
+      <textarea
+        name="write"
+        id="content"
+        placeholder="Enter Your Tasks"
+      ></textarea>
+      <button class="add">ADD</button>
+    </div>
+    <div class="task-area hide">
+      <ul id="taskbox" class="hidebox"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

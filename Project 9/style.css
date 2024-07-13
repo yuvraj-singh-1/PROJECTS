@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+body{
+  background: linear-gradient(270deg, rgb(106, 78, 243), rgb(176, 2, 2));
+  width: 100%;
+  height:100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  background: linear-gradient(270deg, rgb(106, 78, 243), rgb(176, 2, 2));
+  width: 100%;
+  height: 728px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 0.7fr 3fr 0.7fr;
+  justify-items: center;
+}
+.box-1 {
+  text-align: center;
+  border-radius: 12px 0px 0px 12px;
+  width: 511px;
+  background-color: rgba(41, 40, 40, 0.253);
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.box-2 {
+  text-align: center;
+  border-radius: 0px 12px 12px 0px;
+  width: 511px;
+  background-color: rgba(41, 40, 40, 0.253);
+  grid-column: 3/4;
+  grid-row: 2/3;
+  /* z-index: 5; */
+}
+.box1-1 {
+  margin-bottom: 70px;
+  height: 100px;
+  background-color: rgba(176, 2, 2, 0.8);
+  text-align: center;
+  width: 200px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: end;
+  border-radius: 12px;
+}
+
+.box2-2 {
+  border-radius: 12px;
+  margin-bottom: 70px;
+  height: 100px;
+  background-color: rgba(176, 2, 2, 0.8);
+  text-align: center;
+  width: 200px;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  align-self: end;
+}
+.dice {
+  position: absolute;
+  top: 220px;
+  z-index: 10;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+.btn {
+  position: absolute;
+  z-index: 10;
+  color: black;
+  font-family: "Nunito";
+  font-weight: bold;
+}
+.number1 {
+  top: 140px;
+  height: 30px;
+  width: 120px;
+  border: none;
+  border-radius: 16px;
+}
+.number2 {
+  top: 450px;
+  height: 30px;
+  width: 120px;
+  border: none;
+  border-radius: 16px;
+}
+.number3 {
+  top: 500px;
+  height: 30px;
+  width: 100px;
+  border: none;
+  border-radius: 16px;
+}
+.info{
+  font-family: "Nunito";
+  margin-top: 60px;
+}
+.score-1 {
+  margin-top: -6px;
+  color: rgb(176, 2, 2);
+  font-size: 80px;
+}
+.score-2 {
+  margin-top: -6px;
+  color: rgba(176, 2, 2);
+  font-size: 80px;
+}
+.cur-val {
+  color: white;
+  font-size: 14px;
+  font-family: "Nunito";
+  font-weight: lighter;
+  margin-top: 14px;
+}
+.cur-score {
+  font-family: "Nunito";
+  font-size: 24px;
+  color: white;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.519);
+}
+.btn:active {
+  transform: translate(-3%, 2px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.player--active{
+  background-color: rgba(253, 253, 253, 0.577) ;
+}
+.hidden {
+  display: none;
+}
+
+.player-winner{
+  background-color: rgb(30, 193, 30);
+}
+.player-winner .info{
+  color:  rgb(176, 2, 2);
+  font-weight: 700;
+}
+
+
+

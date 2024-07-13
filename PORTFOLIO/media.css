@@ -1,0 +1,54 @@
+@media screen and (max-width: 1400px) {
+  .boxes2 {
+    flex-direction: column;
+    height: 100%;
+    gap: 40px;
+    width: 100%;
+  }
+  .header {
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .boxes {
+    flex-direction: column;
+    height: 100%;
+    gap: 40px;
+  }
+  .header {
+    margin-top: 5%;
+  }
+  .hero-sub-head {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .autoscroll {
+    width: 100px;
+  }
+  .developer > img {
+    height: 400px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header {
+    margin-top: 5%;
+    height: 20%;
+  }
+  .hello {
+    font-size: 70px;
+  }
+  .developer {
+    z-index: -5;
+    opacity: 0.5;
+  }
+  .head1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .nav-section {
+    display: none;
+  }
+}
